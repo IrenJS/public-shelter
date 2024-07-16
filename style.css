@@ -209,26 +209,53 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 90px;
 
 }
 
-.pets {
+.pet-card {
     /* border: 1px solid rgb(247, 1, 1); */
-    margin: 0 70px 0 70px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    transition: 0.5s;
+    gap: 30px;
+
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: #545454;
+    }
 }
 
 .pets:hover {
     cursor: pointer;
-    background-color: #F9B847;
-    transition: 1s;
 }
 
 .img-pet {
     /* border: 1px solid rgb(1, 5, 247); */
     width: 270px;
     height: 270px;
+}
+
+.learn-more-button {
+    text-decoration: none;
+    color: #080808;
+    padding: 15px 45px;
+    border-radius: 100px;
+    border: 2px solid #f1cdb3;
+    font-size: 17px;
+    line-height: 130%;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    transition: 0.25s;
+}
+
+.learn-more-button:hover {
+    background-color: #f1cdb3;
+    transition: 0.5s;
 }
 
 .link {
@@ -275,6 +302,7 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    padding-inline-start: 0px;
 }
 
 .list-item {
@@ -286,8 +314,7 @@ section {
 }
 
 .img-pet-icon {
-    width: 100px;
-    height: 100px;
+    width: 60px;
     margin-bottom: 10px;
 }
 
@@ -305,7 +332,7 @@ section {
 }
 
 .footer {
-    background: radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%), url("./assets/start-screen-gradient-background.jpg");
+    background: url("./assets/start-screen-gradient-background.jpg");
     margin-top: 40px;
 }
 
