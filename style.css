@@ -327,7 +327,7 @@ section {
 
 .contacts-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 303px);
     /* grid-auto-rows: minmax(auto); */
     grid-column-gap: 160px;
     grid-row-gap: 40px;
